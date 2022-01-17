@@ -9,8 +9,6 @@ const areMyWordsInTheSentence = sentence.includes(myWords);
 // the variable myWords if the words are in the sentence and
 // "Sadly, they are not talking about " and the variable myWords if not
 
-if (areMyWordsInTheSentence === true) {
-  console.log(`Yes, they are talking about ${myWords}`); 
-} else {
-  console.log(`Sadly, they are not talking about ${myWords}`);
-}
+if(areMyWordsInTheSentence === true){
+  console.log(`Yes, they are talking about ${myWords}`);
+} else { console.log(`Sadly, they are not talking about ${myWords}`);}

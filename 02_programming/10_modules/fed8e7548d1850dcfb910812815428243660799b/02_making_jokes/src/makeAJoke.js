@@ -1,8 +1,10 @@
 // Code here
-import joke from "awesome-dev-jokes" ;
+import {getRandomJoke} from "awesome-dev-jokes";
 
-function makeAJoke() {
-  return console.log(joke.getRandomJoke());
-}
+function makeAJoke(){
+  console.log(getRandomJoke());
+
+};
 
 export default makeAJoke;
+

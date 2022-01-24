@@ -1,14 +1,10 @@
 function helloSpartan(name = "soldier") {
+  if (name === "soldier"){console.log("Hello soldier; not very talkative uh?");} else {console.log(`Hello ${name}: glad to know your name!`);}
 
-
-  if (name != "soldier") {
-    console.log(`Hello ${name}: glad to know your name!`);
-  } else {
-    console.log(`Hello ${name}; not very talkative uh?`);
-  }
 }
-helloSpartan("Julien");
+
 helloSpartan();
+helloSpartan("Julien");
 
 // Do not remove last lines, it is for tests
 module.exports = helloSpartan;

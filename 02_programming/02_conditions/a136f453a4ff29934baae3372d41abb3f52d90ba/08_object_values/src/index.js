@@ -23,4 +23,4 @@ const isTheRequestInArmoury = Object.values(armoury).includes(odinRequest);
 // Create a condition that logs "Ah, I finally found something to hammer that nail into"
 // if the isTheRequestInArmoury is true and "What do you want me to do with this?" if not
 
-isTheRequestInArmoury ? console.log("Ah, I finally found something to hammer that nail into") : console.log("What do you want me to do with this?") ; 
+isTheRequestInArmoury ? console.log("Ah, I finally found something to hammer that nail into") : console.log("What do you want me to do with this?") ;

@@ -1,9 +1,11 @@
-function greeter(listOfPeople) {
-  listOfPeople.forEach((person)=>{
-    console.log(`Hello ${person}!`);
+
+function greeter(people) {
+  // Code the function here.
+
+  people.forEach((people)=>{
+    console.log(`Hello ${people}!`);
   });
 }
-
 
 
 

@@ -21,5 +21,8 @@ function chooseOperation(numberOne,numberTwo,operator){
     throw new Error("It's not a number integer");
   }
 }
+
+chooseOperation(2,2,addition);
+
 // Leave the line below for tests to work
 module.exports = { chooseOperation, addition, substraction, multiplication, division };

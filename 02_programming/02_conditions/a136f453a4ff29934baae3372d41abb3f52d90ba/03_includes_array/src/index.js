@@ -17,5 +17,6 @@ const isTheComputedOneInOurNumbers = scientistsNumbers.includes(theComputedOne);
 
 if(isTheComputedOneInOurNumbers){
   console.log(`The Answer to the Ultimate Question of Life, the Universe, and Everything is ${theComputedOne}, I knew it!`);
-} 
-else { console.log("I always thought something was fundamentally wrong with the universe.");} 
+}else{
+  console.log("I always thought something was fundamentally wrong with the universe.");
+}

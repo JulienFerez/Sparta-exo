@@ -5,7 +5,7 @@ console.log("Good luck!!");
 
 function numberRandom(min, max)
 {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  return Math.round(Math.random() * (max - min)) + min;
 }
 
 function numberGame(reader, min = 1, max = 100) {
@@ -17,34 +17,40 @@ function numberGame(reader, min = 1, max = 100) {
   console.log(numberServer);
 
 
+  function question (){
 
-  reader.question("Enter a number" , (numberClient)=> {
+    reader.question("Enter a number" , (numberClient)=> {
+      let userNumber = parseInt(numberClient);
 
 
+      if (!Number.isInteger(userNumber)){
+        console.log("This was not a number");
+        question();
 
-    if (numberClient != Number.isInteger){
-      console.log("This was not a number");
-      numberGame(reader);
-    } else if (numberClient < numberServer){
-      console.log("Too low");
-      numberGame(reader);
-    } else if (numberClient > numberServer ) {
-      console.log("Too high");
-      numberGame(reader);
-    } else if ( numberClient < min){
-      console.log("The number is between 1 and 100");
-      numberGame(reader);
-    } else if (numberClient > max){
-      console.log("The number is between 1 and 100");
-      numberGame(reader);
-    } else {
-      console.log("You won!");
-      reader.close();
-    }
+      } else if (userNumber > max || userNumber < min){
+        console.log(`The number is between ${min} and ${max}`);
+        question();
+      }
 
-    //console.log(numberClient);
-  });
+      else if (userNumber < numberServer){
+        console.log("Too low");
+        question();
+
+      } else if (userNumber > numberServer ) {
+        console.log("Too high");
+        question();
+
+      } else {
+        console.log("You won!");
+        reader.close();
+      }
+
+      //console.log(numberClient);
+    });
+  }
+  question();
 }
+
 
 
 

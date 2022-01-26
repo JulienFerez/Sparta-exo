@@ -1,12 +1,18 @@
+// Message de bienvenue
+
 console.log("Welcome!");
 console.log("You have to find the right number, between 1 and 100!");
 console.log("Good luck!!");
 
+// Formule du nombre aléatoire 
 
 function numberRandom(min, max)
 {
   return Math.round(Math.random() * (max - min)) + min;
 }
+
+
+// Function principale 
 
 function numberGame(reader, min = 1, max = 100) {
 

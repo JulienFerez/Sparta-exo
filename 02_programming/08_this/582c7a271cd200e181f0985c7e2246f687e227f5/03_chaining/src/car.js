@@ -7,31 +7,13 @@ const car = {
   minutes : 0 ,
   distances : 0 ,
 
+  start : function () {},
 
+  changeSpeed : function () {},
 
-  start: function () {
-    this.speed = 0;
-    this.minutes = 0;
-    this.distances = 0;
-    return this ;
-  },
-  changeSpeed : function (speed) {
-    this.speed = speed;
-    console.log("changeSpeed",this.distances);
-    return this;
+  drive : function () {},
 
-  },
-  drive : function(minutes) {
-    this.minutes = minutes;
-    this.distances = this.distances + ((this.speed * this.minutes)/60);
-    console.log("drive", this.distances);
-    return this;
-  },
-
-  showDistance : function(distances) {
-    this.distances = console.log(`${this.distances} Km`);
-    return this;
-  },
+  showDistance: function () {},
 
 
 };

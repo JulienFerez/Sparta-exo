@@ -1,17 +1,16 @@
 function howMuchDidIMake(invoices) {
-
-  return invoices
-    .filter((invoices) => invoices.waiter === "Yourself" )
-    .map((arraytip) => arraytip.tip )
-    .reduce((a,b) => a + b,0);
-
+  const arrayFilte = [];
+  invoices.forEach((object)=>{if (object.waiter === "Yourself"){
+    arrayFilte.push(object.tip);
+  }});
+  const arrayTipTotal = arrayFilte.reduce((tip, curentValue)=>{
+    return tip + curentValue ;
+  });
+  return arrayTipTotal;
 }
-
-const invoices = [
-  { clients: 3, waiter: "Yourself", price: 5100, tip: 200 },
-  { clients: 2, waiter: "Dominique", price: 2200, tip: 50 },
-  { clients: 2, waiter: "Yourself", price: 2900, tip: 100 },
-];
-
 // Do not remove the following line, it is for tests
 module.exports = howMuchDidIMake;
+
+
+
+

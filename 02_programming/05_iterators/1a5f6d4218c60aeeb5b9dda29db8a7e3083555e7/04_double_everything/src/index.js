@@ -1,12 +1,9 @@
-function double(numbers) {
-
-
-
-  return numbers.map((number) => number * 2);
+function double(arrayNumber){
+  return arrayNumber.map((number)=>{
+    return number * 2 ;
+  });
 
 }
-
-
 
 
 

@@ -1,7 +1,9 @@
 function onlyMyTips(invoices) {
-  return invoices
-    .filter((invoices) => invoices.waiter === "Yourself" )
-    .map((arraytip) => arraytip.tip );
+  const arrayFiltre = [];
+  invoices.forEach((object)=> { if (object.waiter === "Yourself"){
+    arrayFiltre.push(object.type);
+  });
+  return arrayFiltre;
 }
 
 const todaysInvoices = [

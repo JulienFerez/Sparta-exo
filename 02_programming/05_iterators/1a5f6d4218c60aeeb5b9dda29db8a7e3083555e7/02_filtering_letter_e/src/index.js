@@ -1,8 +1,8 @@
 function theEFilter(arraySentences){
-  const arrayfiltred = arraySentences.filter((sentence)=> {
-    return sentence.includes("e") || sentence.includes("E");
+  const arrayFiltred = arraySentences.filter((sentence)=> {
+    return sentence.includes("E") || sentence.includes("e");
   });
-  return arrayfiltred;
+  return arrayFiltred;
 }
 
 console.log(theEFilter(["Tst", "test", "TEST", "tast"]));

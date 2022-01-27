@@ -1,9 +1,10 @@
 function greeter(people) {
-  for (let i=0 ; i < people.length ; i++) {
+  for (let i = 0 ; i < people.length ; i++) {
     console.log(`Hello ${people[i]}!`);
   }
-
 }
+
+
 const listeOfPeople = ["Julien", "Estelle", "Julien", "Hugo"];
 console.log(greeter(listeOfPeople));
 

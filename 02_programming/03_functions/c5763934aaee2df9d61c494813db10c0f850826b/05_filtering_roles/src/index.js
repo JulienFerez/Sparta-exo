@@ -1,22 +1,12 @@
-function filteredRoles(personArray, roles = "Teacher"){
-  // Code the function here.
-  const mySortedArray = [];
+function filteredRoles(arrayPerson, role = "Teacher"){
+  const arrayFiltre = [];
 
-  if(personArray[0].role === roles){
-    mySortedArray.push({name:personArray[0].name, role:roles});
+  if (arrayPerson[0].role === "Teacher"){
+    arrayFiltre.push({name:arrayPerson[0].name, role:role});
   }
-  if(personArray[1].role === roles){
-    mySortedArray.push({name:personArray[1].name, role:roles});
-  }
-  if(personArray[2].role === roles){
-    mySortedArray.push({name:personArray[2].name, role:roles});
-  }
-  if(personArray[3].role === roles){
-    mySortedArray.push({name:personArray[3].name, role:roles});
-  }
-  return mySortedArray;
 }
+// Code the function here.
+
 
 // Do not remove lines below, it is for tests
 module.exports = filteredRoles;
-

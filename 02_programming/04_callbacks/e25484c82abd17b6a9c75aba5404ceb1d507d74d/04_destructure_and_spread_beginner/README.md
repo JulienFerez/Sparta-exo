@@ -44,7 +44,7 @@ let knowledge = {
 };
 
 let developer = {
-  // give more knowledge to the student
+
 }
 
 // developer final value should be:

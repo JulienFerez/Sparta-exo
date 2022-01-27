@@ -8,22 +8,26 @@ let chosenCar = "Fiat Multipla";
 //  log "We don't have this model here, we only sell the best quality!" when the expression is not listed in the cases
 
 switch (chosenCar) {
-  case "Nissan Cube":
+  case "Nissan Cube" :
     console.log("Wonderful and well made!");
-    break;
-  case "Fiat Multipla":
+    break ;
+  case "Fiat Multipla" :
     console.log("The most iconic Italian car! I can sell it for 50 percent less, just for you!");
-    break;
-  case "Fiat 600 Multipla Marinella":
+    break ;
+  case "Fiat 600 Multipla Marinella" :
     console.log("There's no better car to go to the beach! 😎");
-    break;
-  case "Nissan S-Cargo":
+    break ;
+  case "Nissan S-Cargo" :
     console.log("It's the PlayStation 5 of the car, enjoy!");
-    break;
-  case "Lada Riva":
+    break ;
+  case "Lada Riva" :
     console.log("Ahhh, the Soviet Union car! Good choice!");
-    break;
-  default:
+    break ;
+  default :
     console.log("We don't have this model here, we only sell the best quality!");
     break;
+
 }
+
+
+

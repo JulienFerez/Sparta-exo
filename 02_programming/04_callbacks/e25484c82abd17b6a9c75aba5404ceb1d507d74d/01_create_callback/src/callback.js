@@ -1,4 +1,6 @@
-// code here
+const sayHello = (callback)=>{
+  console.log(`Hello, ${callback.name}`);
+};
 
 
 

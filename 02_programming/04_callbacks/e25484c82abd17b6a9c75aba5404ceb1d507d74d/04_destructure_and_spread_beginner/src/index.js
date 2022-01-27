@@ -19,16 +19,16 @@ let student = {
 
 
 let developer = {
-  ... student,
+  ...student,
   ...knowledge,
+
 };
 
 
 
 let application = ["bug", "code", "code", "code", "code", "code", "code", "code", "code"];
 
-
-// code here
+const [bug, ...code] = application ;
 
 
 module.exports = {

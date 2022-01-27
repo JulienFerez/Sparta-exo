@@ -1,16 +1,5 @@
-function canTakeArtPieces(pieces) {
+function canTakeArtPieces(pieces) {}
 
-  const arrayfiltre = [];
-  pieces.forEach((piece) => {
-    arrayfiltre.push(piece.type);
-  });
-
-  return arrayfiltre.every((type)=>{
-    return type === "painting";
-  });
-
-
-}
 
 
 

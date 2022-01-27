@@ -1,6 +1,6 @@
 let age = 18;
 let hasDrivingLicence = true;
-if (age >= 18 && hasDrivingLicence === true){return "You're not allowed to drive yet.";} else {return "You're allowed to drive.";}
+if (age >= 18 && hasDrivingLicence === true){ console.log("You're allowed to drive."); } else {console.log("You're not allowed to drive yet.");}
 
 // Code here a conditional statement that will log "You're not allowed to drive yet." when
 // the age is below 18 or the person doesn't have a driving licence and logs

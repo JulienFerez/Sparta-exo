@@ -11,18 +11,16 @@ function multiplication(numberOne,numberTwo){
 }
 
 function division(numberOne,numberTwo){
-  return numberOne / numberTwo;
+  return numberOne / numberTwo ;
 }
 
 function chooseOperation(numberOne,numberTwo,operator){
-  if (Number.isInteger(numberOne) && Number.isInteger(numberTwo)) {
+  if (Number.isInteger(numberOne) && Number.isInteger(numberTwo)){
     return operator(numberOne,numberTwo);
   } else {
-    throw new Error("It's not a number integer");
+    throw new Error ("New Error");
   }
 }
-
-chooseOperation(2,2,addition);
 
 // Leave the line below for tests to work
 module.exports = { chooseOperation, addition, substraction, multiplication, division };

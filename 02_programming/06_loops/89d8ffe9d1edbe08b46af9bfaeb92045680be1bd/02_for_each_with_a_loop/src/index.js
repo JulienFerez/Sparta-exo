@@ -1,5 +1,5 @@
 function forEachLoop(array, funct){
-  for (let i = 0 ; i < array.length ; i++){
+  for (let i = O ; i < array.length ; i++){
     funct(array[i]);
   }
 }

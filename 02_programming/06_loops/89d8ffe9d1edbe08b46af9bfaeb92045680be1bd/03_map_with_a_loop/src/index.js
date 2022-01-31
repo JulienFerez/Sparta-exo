@@ -1,10 +1,12 @@
 
 function mapLoop(array, double) {
   const doubleArray = [];
-  for(let i = 0; i < array.length; i++){
-    doubleArray.push(double(array[i]));
+  for (let i = 0 ; i < array.length ; i ++){
+    doubleArray.push((number)=>{
+      return double(number);
+    });
   }
-  return doubleArray ;
+  return doubleArray;
 }
 
 

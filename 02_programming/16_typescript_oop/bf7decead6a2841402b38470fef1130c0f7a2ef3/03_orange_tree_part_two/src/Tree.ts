@@ -1,9 +1,11 @@
-// Code the class here.
+// Paste your previous `Tree` class here.
+
 class Tree {
   // Properties member.
   age: number;
   height: number;
   alive: boolean = true;
+  oranges: string[];
 
   // Constructor member.
   constructor(age: number) {

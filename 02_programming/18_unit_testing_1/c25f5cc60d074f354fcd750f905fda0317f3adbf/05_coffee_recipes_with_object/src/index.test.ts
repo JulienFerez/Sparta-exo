@@ -1,11 +1,6 @@
 import { recipeMaker } from "./index";
 
-type CoffeeRecipe = {
-  name: string;
-  ingredients: string[];
-};
-
-const expectedCoffeeRecipes: CoffeeRecipe[] = [
+type CoffeeRecipe = [
   {
     name: "espresso",
     ingredients: ["espresso"],

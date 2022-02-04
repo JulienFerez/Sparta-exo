@@ -49,7 +49,7 @@ describe("#giveRecipe function", () => {
     });
   });
 
-  test("", () => {
+  test("Test qui retourne une erreur si ça n'existe pas dans la liste", () => {
     expect.assertions(3);
     expect(giveRecipe("LATTE")).toEqual("Sorry, LATTE does not exist on our list.");
     expect(giveRecipe("latt")).toEqual("Sorry, latt does not exist on our list.");

@@ -1,0 +1,93 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(blue, white);
+}
+
+li.emoji {
+  list-style-type: "\1F3AF";
+}
+
+#experiences {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.experience {
+  font-weight: bold;
+  list-style-type: "\1F680";
+}
+
+#skills {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+#container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.text {
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  #picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10 px;
+    height: 10 px;
+  }
+
+  .picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10 px;
+    height: 10 px;
+  }
+
+  #container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  #photo {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  #text {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  p {
+    color: brown;
+  }
+}
